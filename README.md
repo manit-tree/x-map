@@ -2,6 +2,36 @@
 
 MAP Web Component, developed using LIT
 
+### Usage
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lit Component</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+    <div id="app">
+        <x-map id="map" lat="13.846109598469846" lng="100.54703892999102"></x-map>
+    </div>
+    <script type="module" src="./dist/index.es.js?v=1.0.13"></script>
+    <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+        map.setPopup({
+            title: 'บ้านนิรมิตร',
+            address: '27/18 ต.บ้านใหม่ อ.ปากเกร็ด จ.นนทบุรี  11120',
+            tel: '080-597-9990',
+            email: '8columns@gmail.com'
+        })
+    })
+    </script>
+</body>
+</html>
+```
+
 ### ./src/index.ts
 
 ```ts
