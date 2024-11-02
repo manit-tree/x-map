@@ -2,6 +2,10 @@
 
 MAP Web Component, developed using LIT
 
+### Screenshot
+
+![image](https://github.com/user-attachments/assets/0dd22e6e-c858-4f3c-926a-bfea15cbab5a)
+
 ### Usage
 
 ```html
