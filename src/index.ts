@@ -1,18 +1,9 @@
 import {LitElement, html} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
-// import maplibregl from 'maplibre-gl';
 import maplibregl from 'https://cdn.skypack.dev/maplibre-gl';
-
-// import maplibregl from 'https://unpkg.com/maplibre-gl@^4.7.1/dist/maplibre-gl.js';
-// import maplibregl from 'https://cdn.skypack.dev/-/maplibre-gl@v4.7.1-ECQO8wYjP9IhHY1GmRYP/dist=es2020,mode=imports/optimized/maplibre-gl.js';
-
-// import {Map, Marker, Popup, NavigationControl} from '../node_modules/maplibre-gl/src/index.ts';
-
-
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { icons } from './icons.ts';
 import './style.css';
-
 
 interface info {
     title:string;
