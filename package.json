@@ -1,0 +1,21 @@
+{
+  "name": "@8columns/map",
+  "description": "Map Component",
+  "version": "1.0.0",
+  "main": "./dist/index.es.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "author": "Mr.Manit Treeprapankit",
+  "license": "MIT",
+  "dependencies": {
+    "lit": "^3.2.1"
+  },
+  "devDependencies": {
+    "typescript": "~5.6.2",
+    "vite": "^5.4.10",
+    "vite-plugin-css-injected-by-js": "^3.4.0"
+  }
+}
