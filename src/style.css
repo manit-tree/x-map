@@ -2,6 +2,15 @@ x-map {
     display: block;
     width: 100%;
     height: 100%;
+    --overlay-bg-color: #fff;
+    --icon-color: #aaa;
+
+    &.ready {
+        .overlay {
+            pointer-events: none;
+            z-index: -1;
+        }
+    }
 
     .map-container {
         width: 100%;
@@ -46,4 +55,26 @@ x-map {
             }
         }
     }
+
+    .overlay {
+        background-color: var(--overlay-bg-color, #fff);
+        display: grid;
+        place-content: center;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+
+        svg {
+            color: var(--icon-color);
+        }
+    }
+}
+
+[data-theme="dark"] {
+    x-map {
+        --overlay-bg-color: #121212;
+        --icon-color: #888;
+    }    
 }
